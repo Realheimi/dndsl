@@ -4,4 +4,4 @@
 
 basend on 5edmscreen (https://github.com/ceryliae/5edmscreen)
 
-Tranlated and Modified!
+Translated and Modified!
