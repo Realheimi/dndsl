@@ -303,7 +303,7 @@ function findInPage(str) {
                             </form>
                                 </ul>
         <div class="ribbon">
-        <div class="ribbon-text">Version<br />&nbsp;&nbsp;1.1.1</div>
+        <div class="ribbon-text">Version<br />&nbsp;&nbsp;0.1.de</div>
             </div>
             </div>
             </nav>
@@ -379,7 +379,7 @@ function findInPage(str) {
 		<table>
 			<tr>
 				<th>Attribut Wert</th>
-				<th>Associated Fertigkeiten</th>
+				<th>Assoziierte Fertigkeiten</th>
 			</tr>
 			<tr>
 				<td align="left">Stärke</td>
@@ -442,7 +442,7 @@ function findInPage(str) {
 		<table>
 			<tr>
 				<th id="Stärke">Stärke</th>
-				<th align="center">Benutzt für ...</th>
+				<th align="center">Benutzt für ... </th>
 				<th align="left">Regel</th>
 			</tr>
 			<tr>
@@ -556,7 +556,7 @@ function findInPage(str) {
 		<table>
 			<tr>
 				<th id="Geschicklichkeit">Geschicklichkeit</th>
-				<th align="center">Benutzt für...</th>
+				<th align="center">Benutzt für... </th>
 				<th align="left">Regel</th>
 			</tr>
 			<tr>
@@ -680,7 +680,7 @@ function findInPage(str) {
 		<table>
 			<tr>
 				<th id="Konstitution">Konstitution</th>
-				<th align="center">Benutzt für...</th>
+				<th align="center">Benutzt für... </th>
 				<th align="left">Regel</th>
 			</tr>
 			<tr>
@@ -701,7 +701,7 @@ function findInPage(str) {
 			<tr>
 				<td />
 				<td align="left">Ohne Nahrung auskommen</td>
-				<td align="left">Du kannst 3+KON Modifikator Tage ohne ausreichende Nahung Can go without enough food for days equal to 3 + CON mod. Each day past limit gain 1 level of exhaustion.</td>
+				<td align="left">Du kannst 3+KON Modifikator Tage ohne ausreichende Nahung Can go without enough food for days equal to 3 + CON mod. Each day past limit gain 1 level of Erschöpfung.</td>
 			</tr>
 			<tr>
 				<td />
@@ -754,59 +754,53 @@ function findInPage(str) {
 			</tr>
 			<tr>
 				<td align="left">Variabler SG</td>
-				<td align="left">After taking damage make a Konstitution Saving throw with a DC of either 10 or half of the damage taken, whichever is higher.</td>
+				<td align="left">Nachdem du Schaden genommen hast, mache einen Konstitutionsrettungswurf, die Schwieriegkeit beträgt entweder 10 oder die Hälfte des Schadens, je nachdem welcher Wert höher ist.</td>
 			</tr>
 			<tr id="forcedmarch">
 				<th colspan="2" align="center">
-					<h4>Forced March</h4>
+					<h4>Gewaltmarsch</h4>
 				</th>
 			</tr>
 			<tr>
-				<td align="left">Variable DC</td>
-				<td align="left">At the end of each hour a PC must make a Konstitution saving throw with a DC equal to 10 + the number of hours traveled past 8. On a failed throw the PC advances one level of <a href="#exhaustion">exhaustion</a>.</td>
+				<td align="left">Variable SG</td>
+				<td align="left">Wenn mehr als 8 Stunden gereist: Am Ende jeder Stunde Konstitutionsrettungswurf, der Schwierigkeitsgrad beträgt 10 + 1 für jede Stunde über 8 hinaus. Bei einem Misserfolg erleidet der Charakter eine Stufe an  <a href="#Erschöpfung">Erschöpfung</a>. </td>
 			</tr>
-			<tr id="air">
+			<tr id="Luft">
 				<th colspan="2" align="center">
-					<h4>Air Requirements</h4>
+					<h4>Luft Anhalten</h4>
 				</th>
 			</tr>
 			<tr>
-				<td colspan="2">A PC can hold their breath for a number of minutes equal to 1 + their Konstitution Modifikator (minimum 30 seconds). When out of breath, a PC can survive for a number of rounds equal to their Konstitution Modifikator before they drop to 0 hit points and begin to die.</td>
+				<td colspan="2">Ein SC kann für eine Zeitspanne die Luft anhalten, die ihrem Konstitutionsmodifikator + 1 in Minuten entspricht (mindestens 30 Sekunden). Wenn die Luft ausgeht, kann er für eine Anzahl von Runden in Höhe ihres Konstitutionsmodifikators überleben (mindestens 1 Runde). Danach fallen die TP auf 0 und er gilt als sterbend.</td>
 			</tr>
-			<tr id="food">
+			<tr id="Essen">
 				<th colspan="2" align="center">
-					<h4>Food Requirements</h4>
+					<h4>Essen</h4>
 				</th>
 			</tr>
 			<tr>
-				<td colspan="2">A PC must eat one pound of food per day in order to subsist. They can go without food for a number of days equal to 3 + their Konstitution Modifikator (minimum 1) before they begin to starve. This day count is reset when the PC eats their fill for a day; otherwise, the PC advances one level of <a href="#exhaustion">exhaustion</a> at the end of each day beyond their limit.</td>
+				<td colspan="2">Ein SC muss ein Pfund Nahrung pro Tag zu sich nehmen um zu überleben. Er kann für 3 + Konstitution Modifikator (mind. 1) Tage ohne Nahrung auskommen, danach erldeidet er jeden Tag eine Stufe <a href="#Erschöpfung">Erschöpfung</a>. </td>
 			</tr>
-			<tr id="water">
+			<tr id="Wasser">
 				<th colspan="2" align="center">
-					<h4>Water Requirements</h4>
+					<h4>Wasser</h4>
 				</th>
 			</tr>
 			<tr>
-				<td align="left">Automatic</td>
-				<td align="left">
-					A PC drinking less than half the amount of water they require during the day advances one level of <a href="#exhaustion">exhaustion</a> at the end of the day, or two levels if they are already suffering from <a href="#exhaustion">exhaustion</a>.</td>
-			</tr>
-			<tr>
-				<td align="left">Moderate</td>
-				<td align="left">A PC drinking more than half the amount of water they require during the day but less than the full amount must succeed on a Konstitution saving throw or advance one level of <a href="#exhaustion">exhaustion</a>, or two levels if they are already suffering from <a href="#exhaustion">exhaustion</a>.</td>
+				<td colspan="2">Ein SC muss ein 4 Liter Wasser pro Tag zu sich nehmen (8 in heißem Klima). Wenn er nur die Halbe Menge zu sich nimmt muss er am Ende des Tages eine Konstitutionsrettungswurf gegen SG 15 schaffen oder er erleidet eine Stufe <a href="#Erschöpfung">Erschöpfung</a>, sollte er weninger als die Hälte zu sich nehmen erleidert er automatisch eine Stufe <a href="#Erschöpfung">Erschöpfung</a>. </td>
 			</tr>
 		</table>
-		<sup>1</sup> Konstitution represents a largely passive set of 'Fertigkeiten' which have more to do with enduring than performing a specific action the PC can become proficient in. Therefore, Konstitution checks are more uncommon than other Attribut checks and are usually made without adding a proficiency bonus, although situational bonuses may still apply. 
+		<sup>1</sup> Konstitution repräsentiert eine große Anzahl passiver Fertigkeiten, die mehr mit Ausdauer zu tun haben als mit der Ausführung einer bestimmten Handlung, die der SC beherrschen kann. Daher sind Konstitutionsproben seltener als andere Attributprüfungen und werden in der Regel ohne einen Übungssbonus durchgeführt, obwohl es auch hier noch Situations-Boni geben kann. 
 		<br>
-		NOTE: An Attribut check is different from a saving throw; players can be proficient at Konstitution saving throws.
+		HINWEIS: Eine Attributsprobe unterscheidet sich von einem Rettungswurf; Spieler können in Konstitutions-Rettungswürfe geübt sein.
 		<br>
-		<sup>2</sup> A PC can only travel for eight hours a day before they risk becoming exhausted.
+		<sup>2</sup> Ein SC kann nur acht Stunden am Tag unterwegs sein, bevor er Gefahr läuft, erschöpft zu werden.
 		<br>
-		<sup>3</sup> A PC requires one gallon of water per day, or two if the climate is harsh.
+		<sup>3</sup> Ein SC benötigt 4 Liter Wasser pro Tag, oder 8 wenn das Wetter rau ist.
 		<br>
 
 		<h2 id="Intelligenz">Intelligenz</h2>
-		<i>Intelligenz measures mental acuity, accuracy of recall, and the Attribut to reason.</i>
+		<i>Intelligenz ist ein Maß für Geistesschärfe, Erinnerungsvermögen und die Fähigkeit, sich weiterführende Gedanken zu machen.</i>
 		<table>
 			<tr>
 				<th id="Intelligenz">Intelligenz</th>
@@ -815,33 +809,33 @@ function findInPage(str) {
 			</tr>
 			<tr>
 				<td align="left">Wert</td>
-				<td align="left">Determines Modifikator</td>
+				<td align="left">Bestimmt den Modifikator</td>
 				<td align="left">Benutze <a href="#AttributModifikatoren">diese</a> Tabelle</td>
 			</tr>
 			<tr>
 				<td align="left">Modifikator</td>
-				<td align="left">Determines bonus to Intelligenz related rolls</td>
+				<td align="left">Bestimmt den Bonus zu Intelligenz bezogenen Würfen</td>
 				<td align="left">Benutze <a href="#AttributModifikatoren">diese</a> Tabelle</td>
 			</tr>
 			<tr>
-				<td align="left">Save</td>
-				<td align="left">Disbelieving certain illusions and resisting mental assaults that can be refuted with logic, sharp memory, or both</td>
-				<td align="left">1W20 + Attribut mod + Übungsbonus (wenn geübt)</td>
+				<td align="left">Rettungswurf</td>
+				<td align="left">Zweifel an bestimmten Illusionen und Widerstand gegen mentale Übergriffe, die mit Logik, scharfer Erinnerung oder beidem widerlegt werden können</td>
+				<td align="left">1W20 + Attribut Mod. + Übungsbonus (wenn geübt)</td>
 			</tr>
 			<tr>
-				<td align="left">Check</td>
-				<td align="left">Drawing on logic, education, memory, or deductive reasoning</td>
-				<td align="left">1W20 + INT mod</td>
+				<td align="left">Probe</td>
+				<td align="left">Auf Logik, Bildung, Gedächtnis oder deduktives Denken zurückgreifen</td>
+				<td align="left">1W20 + INT Mod.</td>
 			</tr>
 			<tr>
 				<td>Andere Einsatzmöglichkeiten</td>
-				<td align="left">Communicate with a creature without words. Estimate the value of a precious item. Forge a document. Recall lore about a craft or trade. Win a game of Fertigkeit.</td>
+				<td align="left">Mit einer Kreatur ohne Worte kommunizieren. Den Wert eines kostbaren Gegenstandes schätzen. Ein Dokument fälschen. An das Wissen um ein Handwerk oder eine Zunft erinnern. Einen Wettstreit in Fachwissen gewinnen.</td>
 				<td />
 			</tr>
 		</table>
 
 		<h3>Intelligenz Fertigkeiten</h3>
-		<i>Nachfolgend findest du alle Fertigkeiten die mit demIntelligenz Attribut.</i>
+		<i>Nachfolgend findest du alle Fertigkeiten die mit dem Intelligenz Attribut assoziert sind.</i>
 		<table>
 			<tr id="Arkane Kunde">
 				<th colspan="2" align="center">
@@ -849,47 +843,47 @@ function findInPage(str) {
 				</th>
 			</tr>
 			<tr>
-				<td align="left">Easy</td>
-				<td align="left">Recall widely known information; identify common people, places, objects, symbols, fauna, or flora</td>
+				<td align="left">Leicht</td>
+				<td align="left">Abrufen allgemein bekannter Informationen; Identifizierung von gewöhnlichen Menschen, Orten, Objekten, Symbolen, Fauna oder Flora</td>
 			</tr>
 			<tr>
-				<td align="left">Moderate</td>
-				<td align="left">Recall more obscure or specific information; identify uncommon people, places, objects, symbols, fauna, or flora</td>
+				<td align="left">Mittel</td>
+				<td align="left">Abrufen von eher obskuren oder spezifischen Informationen; Identifizierung von ungewöhnlichen Personen, Orten, Objekten, Symbolen, Fauna oder Flora</td>
 			</tr>
 			<tr>
-				<td align="left">Hard</td>
-				<td align="left">Recall truly esoteric or precise information; identify rare people, places, objects, symbols, fauna, or flora</td>
+				<td align="left">Schwer</td>
+				<td align="left">Wirklich esoterische oder präzise Informationen abrufen; seltene Personen, Orte, Gegenstände, Symbole, Fauna oder Flora identifizieren</td>
 			</tr>
 			<tr>
-				<td align="left">Very Hard</td>
-				<td align="left">Recall information that is known only by a privileged few; identify exceedingly rare people, places, objects, symbols, fauna, or flora</td>
+				<td align="left">Sehr Schwer</td>
+				<td align="left">Informationen abrufen, die nur wenigen Privilegierten bekannt sind; äußerst seltene Personen, Orte, Gegenstände, Symbole, Fauna oder Flora identifizieren</td>
 			</tr>
 			<tr id="Nachforschungen">
 				<th colspan="2" align="center">
-					<h4>Nachforschungen - Other</h4>
+					<h4>Nachforschungen - Anderes</h4>
 				</th>
 			</tr>
 			<tr>
-				<td align="left">Easy</td>
-				<td align="left">Identify a particularly obvious trap or a secret or coded message left by a contact, communicate a simple idea with an intelligent creature you don't share a language with, discover the true Naturkunde of a low-level illusion.</td>
+				<td align="left">Leicht</td>
+				<td align="left">Erkenne eine besonders offensichtliche Falle oder eine geheime oder verschlüsselte Nachricht, die von einem Kontakt hinterlassen wurde, kommuniziere eine einfache Idee mit einem intelligenten Wesen, mit dem du keine Sprache teilst, entdecke die wahre Natur einer niedrig-stufigen Illusion.</td>
 			</tr>
 			<tr>
-				<td align="left">Moderate</td>
-				<td align="left">Identify a typical trap, determine time or cause of death of a recently deceased creature, estimate the material worth of an item, discover the true Naturkunde of a mid-level illusion</td>
+				<td align="left">Mittel</td>
+				<td align="left">Eine typische Falle identifizieren, den Zeitpunkt oder die Todesursache einer kürzlich verstorbenen Kreatur bestimmen, den materiellen Wert eines Gegenstandes schätzen, die wahre Natur einer Illusion auf mittlerer Stufe entdecken</td>
 			</tr>
 			<tr>
-				<td align="left">Hard</td>
-				<td align="left">Identify a well-hidden trap, object, or area; forge a document or identify such a document, discover the true Naturkunde of a high-level illusion</td>
+				<td align="left">Schwer</td>
+				<td align="left">Identifiziere eine gut versteckte Falle, ein Objekt oder einen Bereich; fälschle ein Dokument oder identifiziere ein solches Dokument, entdecke die wahre Natur einer hochstufigen Illusion</td>
 			</tr>
 			<tr>
-				<td align="left">Very Hard</td>
-				<td align="left">Identify a magically-hidden trap, object, or area; discern the purpose and process of a complicated device or system; determine the integrity of a structure, construct, or formation and identify any exploitable weak points</td>
+				<td align="left">Sehr Schwer</td>
+				<td align="left">Identifiziere eine magisch verborgene Falle, ein Objekt oder einen Bereich; erkenne den Zweck und den Prozess eines komplizierten Geräts oder Systems; Bestimme die Integrität einer Struktur, eines Konstrukts oder einer Formation und identifiziere alle ausnutzbaren Schwachstellen</td>
 			</tr>
 		</table>
 	<br>
 	
 		<h2 id="Weisheit">Weisheit</h2>
-		<i>Weisheit measures perceptiveness, intuition, and attunement with the surrounding world.</i>
+		<i>Weisheit misst deine Aufmerksamkeit und deine Intuition und gibt an, wie sehr du mit der Welt um dich herum im Einklang stehst.</i>
 			
 		<table>
 			<tr>
@@ -899,27 +893,27 @@ function findInPage(str) {
 	        </tr>
 			<tr>
 				<td align="left">Wert</td>
-				<td align="left">Determines Modifikator</td>
+				<td align="left">Bestimmt den Modifikator</td>
 				<td align="left">Benutze <a href="#AttributModifikatoren">diese</a> Tabelle</td>
 			</tr>
 			<tr>
 				<td align="left">Modifikator</td>
-				<td align="left">Determines bonus to Weisheit related rolls</td>
+				<td align="left">Bestimmt den Bonus bei Weisheit beszogenen Würfen</td>
 				<td align="left">Benutze <a href="#AttributModifikatoren">diese</a> Tabelle</td>
 			</tr>
 			<tr>
-				<td align="left">Save</td>
-				<td align="left">Resisting effects that charm, frighten, or otherwise assault your willpower</td>
-				<td align="left">1W20 + WIS mod + Übungsbonus (wenn geübt)</td>
+				<td align="left">Rettungswurf</td>
+				<td align="left">Widerstehe Effekten die dich bezaubern, erschrecken, oder auf andere Art deine Willenskraft angreifen wollen</td>
+				<td align="left">1W20 + WIS Mod. + Übungsbonus (wenn geübt)</td>
 			</tr>
 			<tr>
-				<td align="left">Check</td>
-				<td align="left">Reading body language, understanding someone's feelings, noticing things about the environment, or caring for an injured person</td>
-				<td align="left">1W20 + WIS mod</td>
+				<td align="left">Probe</td>
+				<td align="left">die Körpersprache einer anderen Kreatur zu lesen, in die Gefühle einer anderen Person hineinversetzen, etwas in deiner Umgebung bemerken, die Wunden einer verletzten Person behandeln</td>
+				<td align="left">1W20 + WIS Mod.</td>
 			</tr>
 			<tr>
 				<td>Andere Einsatzmöglichkeiten</td>
-				<td align="left">Get a gut feeling about what course of action to follow. Discern whether a seemingly dead or living creature is undead.</td>
+				<td align="left">Ein Bauchgefühl dafür bekommen, Herausfinden, ob eine scheinbar lebende oder tote Kreatur untot ist.</td>
 				<td />
 			</tr>
 		</table>
@@ -1306,9 +1300,9 @@ function findInPage(str) {
 			</tr>
 		</table>
 <br>
-		<h2>Exhaustion</h2>
-		<h3>Exhaustion Levels</h3>
-		<table id="exhaustion">
+		<h2>Erschöpfung</h2>
+		<h3>Erschöpfung Levels</h3>
+		<table id="Erschöpfung">
 			<tr>
 				<th>Level</th>
 				<th align="left">Effect</th>
@@ -1340,31 +1334,31 @@ function findInPage(str) {
 		</table>
 <br>
 		<table>
-			<h3>Suffering Exhaustion</h4>
+			<h3>Suffering Erschöpfung</h4>
 			<tr>
 				<th align="left">Cause</th>
 				<th align="left">Details</th>
 			</tr>
 			<tr>
 				<td align="left">Forced March</td>
-				<td align="left">For each hour spent traveling past 8 hours make a CON save at DC 10 + 1 for each hour past 8. On a failed save, a character suffers 1 level of exhaustion.</td>
+				<td align="left">For each hour spent traveling past 8 hours make a CON save at DC 10 + 1 for each hour past 8. On a failed save, a character suffers 1 level of Erschöpfung.</td>
 			</tr>
 			<tr>
 				<td align="left">Starvation</td>
-				<td align="left">If a creature doesn't eat enough food in a day, they start to starve. Food can be stretched out by eating half as much per day, which counts as half a day without food. A character can go without food for a number of days equal to 3 + CON mod, and then at the end of each day beyond that a character automatically suffers 1 level of exhaustion. A normal day of eating reduces the days without food to 0.</td>
+				<td align="left">If a creature doesn't eat enough food in a day, they start to starve. Food can be stretched out by eating half as much per day, which counts as half a day without food. A character can go without food for a number of days equal to 3 + CON mod, and then at the end of each day beyond that a character automatically suffers 1 level of Erschöpfung. A normal day of eating reduces the days without food to 0.</td>
 			</tr>
 			<tr>
 				<td align="left">Dehydration</td>
-				<td align="left">A creature who drinks less than half as much water than they need in a day must succeed on a DC 15 CON save or suffer 1 level of exhaustion. A character with access to even less water automatically suffers 1 level of exhaustion at the end of the day. If a character already has any levels of exhaustion, they gain 2 levels in either case.</td>
+				<td align="left">A creature who drinks less than half as much water than they need in a day must succeed on a DC 15 CON save or suffer 1 level of Erschöpfung. A character with access to even less water automatically suffers 1 level of Erschöpfung at the end of the day. If a character already has any levels of Erschöpfung, they gain 2 levels in either case.</td>
 			</tr>
 			<tr>
 				<td align="left">Barbarian's Frenzy</td>
-				<td align="left">A Barbarian who goes down the Path of the Berserker can choose to enter a frenzy if he is raging. When the rage ends, he suffers a level of exhaustion.</td>
+				<td align="left">A Barbarian who goes down the Path of the Berserker can choose to enter a frenzy if he is raging. When the rage ends, he suffers a level of Erschöpfung.</td>
 			</tr>
 		</table>
 <br>
-		<h3>Reducing Levels of Exhaustion</h3>
-		<p>At the end of a long rest, provided a character has had enough food and water that day, they reduce their level of exhaustion by 1.</p>
+		<h3>Reducing Levels of Erschöpfung</h3>
+		<p>At the end of a long rest, provided a character has had enough food and water that day, they reduce their level of Erschöpfung by 1.</p>
 <br>
 		<h2>Damage Types</h2>
 		<table id="damagetypes">
