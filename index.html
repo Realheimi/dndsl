@@ -1135,7 +1135,7 @@ function findInPage(str) {
 				<th>Beschreibung</th>
 			</tr>
 			<tr>
-				<td id="Betäubt">
+				<td id="betaeubt">
 					<h3>Betäubt</h3>
 				</td>
 				<td align="left">
@@ -1147,7 +1147,7 @@ function findInPage(str) {
 				</td>
 			</tr>
 			<tr>
-				<td id="Bewusstlos">
+				<td id="bewusstlos">
 					<h3>Bewusstlos</h3>
 				</td>
 				<td align="left">
@@ -1161,7 +1161,18 @@ function findInPage(str) {
 				</td>
 			</tr>
 			<tr>
-				<td id="Blind">
+				<td id="bezaubert">
+					<h3>Bezaubert</h3>
+				</td>
+				<td align="left">
+					<l>
+						<li>Eine bezauberte Kreatur kann den Bezauberer weder angreifen noch als Ziel für schädigende Fähigkeiten oder magische Effekte auswählen.</li>
+						<li>Der Bezauberer ist im Vorteil bei allen Attributswürfen, wenn er sozial mit der Kreatur interagieren will.</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td id="blind">
 					<h3>Blind</h3>
 				</td>
 				<td align="left">
@@ -1172,277 +1183,240 @@ function findInPage(str) {
 				</td>
 			</tr>
 			<tr>
-				<td id="charmed">
-					<h3>Charmed</h3>
+				<td id="festgesetzt">
+					<h3>Festgesetzt</h3>
 				</td>
 				<td align="left">
 					<ul>
-						<li>A charmed creature can't attack the charmer or target the charmer with harmful Attribute or magical effects</li>
-						<li>The charmer has advantage on any Attribut check to interact socially with the creature.</li>
+						<li>Die Bewegungsrate einer festgesetzten Kreatur ist 0 und kann durch keinen Bonus erhöht werden.</li>
+						<li>Angriffswürfe gegen die Kreatur sind im Vorteil, die Kreatur ist bei ihren Angriffswürfen hingegen im Nachteil.</li>
+						<li><Die Kreatur ist im Nachteil bei Geschicklichkeitsrettungswürfen./li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="deafened">
-					<h3>Deafened</h3>
+				<td id="gelaehmt">
+					<h3>Gelähmt</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>A deafened creature can't hear and automatically fails any Attribut check that requires hearing.</li>
+						<li>Eine gelähmte Kreatur ist kampfunfähig (siehe den entsprechenden Zustand) und kann sich weder bewegen noch sprechen.</li>
+						<li>Sie scheitert automatisch bei Stärke- und Geschicklichkeitsrettungswürfen.</li>
+						<li>Angriffswürfe gegen die Kreatur sind im Vorteil.</li>
+						<li>Jeder Angriff, der die Kreatur trifft, ist automatisch ein kritischer Treffer, wenn sich der Angreifer innerhalb von 1,50 m um die Kreatur befindet.</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="frightened">
-					<h3>Frightened</h3>
+				<td id="gepackt">
+					<h3>Gepackt</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>A frightened creature has disadvantage on Attribut checks and attack rolls while the source of its fear is within line of sight.</li>
-						<li>The creature can't willingly move closer to the source of its fear.</li>
+						<li>Die Bewegungsrate einer gepackten Kreatur ist 0 und kann durch keinen Bonus erhöht werden.</li>
+						<li>Der Zustand endet, wenn die packende Kreatur kampfunfähig wird (siehe den entsprechenden Zustand).</li>
+						<li>Der Zustand endet auch, wenn ein Effekt die gepackte Kreatur aus der Reichweite der packenden Kreatur oder des packenden Effekts bewegt, zum Beispiel weil sie durch den Zauber Donnerwoge weggestoßen wird.</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="grappled">
-					<h3>Grappled</h3>
+				<td id="kampfunfehig">
+					<h3>Kampfunfähig</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.</li>
-						<li>The condition ends if the grappler is <a href="#incapacitated">incapacitated</a>.</li>
-						<li>The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the <i>thunderwave</i> spell.</li>
+						<li>Eine kampfunfähige Kreatur kann keine Aktionen oder Reaktionen ausführen.</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="incapacitated">
-					<h3>Incapacitated</h3>
+				<td id="liegend">
+					<h3>Liegend</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>An incapacitated creature can't take actions or reactions.</li>
+						<li>Eine liegende Kreatur kann als Bewegung nur kriechen, es sei denn, sie steht auf und beendet damit den Zustand.</li>
+						<li>Sie ist im Nachteil bei Angriffswürfen.</li>
+						<li>Alle Angriffe gegen die Kreatur sind im Vorteil, wenn sich der Angreifer innerhalb von 1,50 m um die Kreatur befindet. Ansonsten ist der Angriffswurf im Nachteil.</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="invisible">
-					<h3>Invisible</h3>
+				<td id="taub">
+					<h3>Taub</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.</li>
-						<li>Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.</li>
+						<li>Eine taube Kreatur kann nicht hören und scheitert automatisch bei allen Attributswürfen, die Gehör erfordern.</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="paralyzed">
-					<h3>Paralyzed</h3>
+				<td id="unsichtbar">
+					<h3>Unsichtbar</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>A paralyzed creature is <a href="#incapacitated">incapacitated</a> and can't move or speak.</li>
-						<li>The creature automatically fails Stärke and Geschicklichkeit saving throws.</li>
-						<li>Attack rolls against the creature have advantage.</li>
-						<li>Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.</li>
+						<li>Eine unsichtbare Kreatur ist ohne die Hilfe von Magie oder besonderen Sinnen nicht zu sehen. Wenn sie sich verbergen will, gilt die Kreatur als komplett verschleiert. Geräusche, die sie verursacht, oder Spuren, die sie hinterlässt, können ihre Position verraten.</li>
+						<li>Angriffswürfe gegen die Kreatur sind im Nachteil, die Kreatur ist bei ihren Angriffswürfen hingegen im Vorteil.</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="petrified">
-					<h3>Petrified</h3>
+				<td id="veraengstigt">
+					<h3>Verängstigt</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>A petrified creature is transformed, along with an nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.</li>
-						<li>The creature is <a href="#incapacitated">incapacitated</a>, can't move or speak, and is unaware of its surroundings.</li>
-						<li>Attack rolls against the creature have advantage.</li>
-						<li>The creature automatically fails Stärke and Geschicklichkeit saving throws.</li>
-						<li>The creature has resistance to all damage.</li>
-						<li>The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.</li>
+						<li>Eine verängstigte Kreatur ist im Nachteil bei Attributs- und Angriffswürfen, solange sich die Quelle ihrer Angst in Sichtlinie befindet.</li>
+						<li>Die Kreatur kann sich nicht willentlich in Richtung der Quelle ihrer Angst bewegen.</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="poisoned">
-					<h3>Poisoned</h3>
+				<td id="vergiftet">
+					<h3>Vergitet</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>A poisoned creature has disadvantage on attack rolls and Attribut checks.</li>
+						<li>Eine vergiftete Kreatur ist im Nachteil bei Attributs- und Angriffswürfen.</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
-				<td id="prone">
-					<h3>Prone</h3>
+				<td id="versteinert">
+					<h3>Versteinert</h3>
 				</td>
 				<td align="left" text="">
 					<ul>
-						<li>A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.</li>
-						<li>The creature has disadvantage on attack rolls.</li>
-						<li>An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td id="restrained">
-					<h3>Restrained</h3>
-				</td>
-				<td align="left" text="">
-					<ul>
-						<li>A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.</li>
-						<li>Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.</li>
-						<li>The creature has disadvantage on Geschicklichkeit saving throws.</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td id="stunned">
-					<h3>Stunned</h3>
-				</td>
-				<td align="left" text="">
-					<ul>
-						<li>A stunned creature is <a href="#incapacitated">incapacitated</a>, can't move, and can speak only falteringly.</li>
-						<li>The creature automatically fails Stärke and Geschicklichkeit saving throws.</li>
-						<li>Attack rolls against the creature have advantage.</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td id="unconscious">
-					<h3>Unconscious</h3>
-				</td>
-				<td align="left" text="">
-					<ul>
-						<li>An unconscious creature is <a href="#incapacitated">incapacitated</a>, can't move or speak, and is unaware of its surroundings.</li>
-						<li>The creature drops whatever it's holding and falls prone.</li>
-						<li>The creature automatically fails Stärke and Geschicklichkeit saving throws.</li>
-						<li>Attack rolls against the creature have advantage.</li>
-						<li>Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.</li>
+						<li>Eine versteinerte Kreatur wird mit ihrer gesamten nicht-magischen Ausrüstung, die sie trägt oder in Händen hält, in eine feste unbelebte Substanz verwandelt (normalerweise Stein). Ihr Gewicht erhöht sich um den Faktor 10 und sie hört auf zu altern.</li>
+						<li>Die Kreatur ist kampfunfähig (siehe den entsprechenden Zustand), kann sich weder bewegen noch sprechen und ist sich ihrer Umgebung nicht bewusst.</li>
+						<li>Angriffswürfe gegen die Kreatur sind im Vorteil.</li>
+						<li>Sie scheitert automatisch bei Stärke- und Geschicklichkeitsrettungswürfen.</li>
+						<li>Die Kreatur besitzt eine Resistenz gegen jeglichen Schaden.</li>
+						<li>Sie ist immun gegen Gifte und Krankheiten, doch Gifte und Krankheiten, die sich bereits in ihrem Körper befinden, werden aufgehalten, nicht neutralisiert.</li>
 					</ul>
 				</td>
 			</tr>
 		</table>
 <br>
 		<h2>Erschöpfung</h2>
-		<h3>Erschöpfung Levels</h3>
+		<h3>Erschöpfungs Stufen</h3>
 		<table id="Erschöpfung">
 			<tr>
-				<th>Level</th>
-				<th align="left">Effect</th>
+				<th>Stufe</th>
+				<th align="left">Effekt</th>
 			</tr>
 			<tr>
 				<td align="left">1</td>
-				<td align="left">Disadvantage on Attribut checks.</td>
+				<td align="left">Im Nachteil bei Attributswürfen.</td>
 			</tr>
 			<tr>
 				<td align="left">2</td>
-				<td align="left">Speed halved</td>
+				<td align="left">Bewegungsrate halbiert</td>
 			</tr
 			<tr>
 				<td align="left">3</td>
-				<td align="left">Disadvantage on attack rolls and saving throws</td>
+				<td align="left">Im Nachteil bei Angriffs- und Rettungswürfen.</td>
 			</tr>
 			<tr>
 				<td align="left">4</td>
-				<td align="left">Hit point maximum halved</td>
+				<td align="left">Maximale Trefferpunkte halbiert</td>
 			</tr>
 			<tr>
 				<td align="left">5</td>
-				<td align="left">Speed reduced to 0</td>
+				<td align="left">Bewegungsrate fällt auf 0</td>
 			</tr>
 			<tr>
 				<td align="left">6</td>
-				<td align="left">Death</td>
+				<td align="left">Tod</td>
 			</tr>
 		</table>
 <br>
 		<table>
-			<h3>Suffering Erschöpfung</h4>
+			<h3>Erschöpfung Erleiden</h4>
 			<tr>
-				<th align="left">Cause</th>
+				<th align="left">Grund</th>
 				<th align="left">Details</th>
 			</tr>
 			<tr>
-				<td align="left">Forced March</td>
-				<td align="left">For each hour spent traveling past 8 hours make a CON save at DC 10 + 1 for each hour past 8. On a failed save, a character suffers 1 level of Erschöpfung.</td>
+				<td align="left">Gewaltmarsch</td>
+				<td align="left">Wenn mehr als 8 Stunden gereist: Am Ende jeder Stunde Konstitutionsrettungswurf, der Schwierigkeitsgrad beträgt 10 + 1 für jede Stunde über 8 hinaus. Bei einem Misserfolg erleidet der Charakter eine Stufe an Erschöpfung.</td>
 			</tr>
 			<tr>
-				<td align="left">Starvation</td>
-				<td align="left">If a creature doesn't eat enough food in a day, they start to starve. Food can be stretched out by eating half as much per day, which counts as half a day without food. A character can go without food for a number of days equal to 3 + CON mod, and then at the end of each day beyond that a character automatically suffers 1 level of Erschöpfung. A normal day of eating reduces the days without food to 0.</td>
+				<td align="left">Verhungern</td>
+				<td align="left">Wenn eine Kreatur an einem Tag nicht genug Nahrung zu sich nimmt, beginnt sie zu verhungern. Die Nahrung kann durch eine halbe Menge pro Tag gestreckt werden, was als ein halber Tag ohne Nahrung zählt. Ein Charakter kann für eine Anzahl von Tagen ohne Nahrung auskommen, die 3 + KON Mod. entspricht, und am Ende jedes Tages darüber hinaus erleidet ein Charakter automatisch 1 Stufe Erschöpfung. Ein normaler Tag ohne Nahrung reduziert die Tage ohne Nahrung auf 0.</td>
 			</tr>
 			<tr>
-				<td align="left">Dehydration</td>
-				<td align="left">A creature who drinks less than half as much water than they need in a day must succeed on a DC 15 CON save or suffer 1 level of Erschöpfung. A character with access to even less water automatically suffers 1 level of Erschöpfung at the end of the day. If a character already has any levels of Erschöpfung, they gain 2 levels in either case.</td>
+				<td align="left">Dehydrierung</td>
+				<td align="left">Ein SC muss ein 4 Liter Wasser pro Tag zu sich nehmen (8 in heißem Klima). Wenn er nur die Halbe Menge zu sich nimmt muss er am Ende des Tages eine Konstitutionsrettungswurf gegen SG 15 schaffen oder er erleidet eine Stufe Erschöpfung, sollte er weninger als die Hälte zu sich nehmen erleidert er automatisch eine Stufe Erschöpfung.</td>
 			</tr>
 			<tr>
-				<td align="left">Barbarian's Frenzy</td>
-				<td align="left">A Barbarian who goes down the Path of the Berserker can choose to enter a frenzy if he is raging. When the rage ends, he suffers a level of Erschöpfung.</td>
+				<td align="left">Barbaren Raserei</td>
+				<td align="left">Ein Barbar der dem Pfad des Berserkers folgt, kann ich entscheiden während er im Kampfrausch ist in Raserei zu verfallen. Wenn die Raserei endet erhält er eine Stufer Erschöpfung.</td>
 			</tr>
 		</table>
 <br>
-		<h3>Reducing Levels of Erschöpfung</h3>
-		<p>At the end of a long rest, provided a character has had enough food and water that day, they reduce their level of Erschöpfung by 1.</p>
+		<h3>Erschöpfung abbauen</h3>
+		<p>Eine lange Rast verringert die Erschöpfungsstufe einer Kreatur um 1, vorausgesetzt sie verfügt über Essen und Trinken.</p>
 <br>
-		<h2>Damage Types</h2>
-		<table id="damagetypes">
+		<h2>Schadensarten</h2>
+		<table id="schadensarten">
 			<tr>
-				<th>Type</th>
-				<th>Description</th>
+				<th>Typ</th>
+				<th>Beschreibung</th>
 			</tr>
 			<tr>
-				<td align="left">Acid</td>
-				<td align="left">Corrosive substances, magical or alchemical</td>
+				<td align="left">Blitz</td>
+				<td align="left">Der Zauber Kugelblitz oder die Odemwaffe eines blauen Drachen verursachen Blitzschaden.</td>
 			</tr>
 			<tr>
-				<td align="left">Bludgeoning</td>
-				<td align="left">Blunt force hits (hammer, falling, etc.)</td>
+				<td align="left">Energie</td>
+				<td align="left">Die meisten Effekte, die Energieschaden verursachen, sind Zauber, einschließlich Magisches Geschoss und Waffe des Glaubens. Sie konzentrieren reine magische Energie in schädlicher Form.</td>
 			</tr>
 			<tr>
-				<td align="left">Cold</td>
-				<td align="left">Extreme low temperature and magic attacks</td>
+				<td align="left">Feuer</td>
+				<td align="left">Der Odem eines roten Drachen und viele Zauber, die Flammen hervorrufen, verursachen Feuerschaden.</td>
 			</tr>
 			<tr>
-				<td align="left">Fire</td>
-				<td align="left">Fire breaths and fire based spells and magic</td>
+				<td align="left">Gift</td>
+				<td align="left">Giftige Stiche und der Atem eines grünen Drachen verursachen Giftschaden</td>
 			</tr>
 			<tr>
-				<td align="left">Force</td>
-				<td align="left">Pure magical energy focused in damaging form</td>
+				<td align="left">Gleißend</td>
+				<td align="left">Gleißender Schaden wird vom Flammenschlag eines Klerikers oder der Klinge eines Engels verursacht und versengt das Fleisch, während es den Geist mit Energie überlädt.</td>
 			</tr>
 			<tr>
-				<td align="left">Lightning</td>
-				<td align="left">lightning bolt, or electricity spells.</td>
+				<td align="left">Hieb</td>
+				<td align="left">Schwerter, Äxte und die Klauen von Monstern verursachen Hiebschaden.</td>
 			</tr>
 			<tr>
-				<td align="left">Necrotic</td>
-				<td align="left">Dealt by certain undead and corrupted magic</td>
+				<td align="left">Kälte</td>
+				<td align="left">Der Speer eines Eisteufels und der frostige Strahl eines weißen Drachen verursachen Kälteschaden.</td>
 			</tr>
 			<tr>
-				<td align="left">Piercing</td>
-				<td align="left">Puncturing and impaling attacks and weapon</td>
+				<td align="left">Nekrotisch</td>
+				<td align="left">Nekrotischer Schaden, der von verschiedenen Untaten und Zaubern wie Kalte Hand verursacht wird, lässt Materie und sogar die Seele verwelken.</td>
 			</tr>
 			<tr>
-				<td align="left">Poison</td>
-				<td align="left">Venomous stings, spores, substances and gases</td>
+				<td align="left">Psychisch</td>
+				<td align="left">Geistige Fähigkeiten wie der Gedankenstrahl eines Gedankenschinders verursachen psychischen Schaden.</td>
 			</tr>
 			<tr>
-				<td align="left">Psychic</td>
-				<td align="left">Mental attacks and damage like psionic Attribute</td>
+				<td align="left">Säure</td>
+				<td align="left">Der ätzende Atem eines schwarzen Drache und die zersetzenden Enzyme, die von einem schwarzen Blob abgesondert werden, verursachen Säureschaden.</td>
 			</tr>
 			<tr>
-				<td align="left">Radiant</td>
-				<td align="left">Holy damage, like divine spells or creatures</td>
+				<td align="left">Schall</td>
+				<td align="left">Erschütternde Schallexplosionen, wie der Effekt des Zaubers Donnerwoge, verursachen Schallschaden.</td>
 			</tr>
 			<tr>
-				<td align="left">Slashing</td>
-				<td align="left">Swords, axes, and monster claws that slash</td>
+				<td align="left">Stich</td>
+				<td align="left">Aufspießende und durchschlagende Angriffe, einschließlich denen von Speeren, Pf eilen und den Bissen von Monstern, verursachen Stichschaden.</td>
 			</tr>
 			<tr>
-				<td align="left">Thunder</td>
-				<td align="left">Concussive burst of sound or shock wave</td>
+				<td align="left">Wucht</td>
+				<td align="left">Schaden durch stumpfe Waffen, wie Streithämmer, verursachen ebenso Wuchtschaden wie Stürze oder Quetschungen</td>
 			</tr>
 		</table>
 <br>
